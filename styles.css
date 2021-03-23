@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: Gotham Rounded, sans-serif;
+}
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    margin: auto;
+    width: min-content;
+    height: min-content;
+}
+
+
+.memory {
+    display: inline-block;
+    width: 200px;
+    height: 615px;
+    margin:  10px;
+    background-color: rgb(175, 175, 175);
+    border: 3px solid black;
+    text-align: center;
+    padding: 3px;
+    font-size: 25px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+}
+
+.elementos-memoria{
+font-size: 15px;
+border-bottom: 1px solid rgb(125, 125, 125) ;
+}
+
+.container {
+    display: inline-block;
+    margin: auto !important;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(175, 175, 175);
+    margin-top: 30px;
+    border: 3px solid black;
+}
+
+.display {
+    margin: 4px 4px 4px 4px;
+    display: block;
+    background-color: rgb(175, 175, 175);
+    height: 100px;
+    width: 400px;
+    border: 3px solid black;
+    font-size: 40px;
+    padding: 3px;
+    max-width: 400px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.teclas {
+    padding: 2px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+    background-color: rgb(175, 175, 175);
+    grid-auto-flow: column;
+}
+
+
+.boton {
+    display: block;
+    margin: 0 auto;
+    width: 95% !important;
+    height: 95%;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.igual {
+    background-color: rgb(210, 210, 210);
+}
+
+.c {
+    grid-column: 1/span 2;
+}
